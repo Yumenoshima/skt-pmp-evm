@@ -3,7 +3,7 @@
 
 class ProjectSnapshot:
     bac = 0  # Budget At Completion
-    pv = 0  # Planned Cost
+    pv = 0  # Planned Value
     ev = 0  # Earned Value
     ac = 0  # Actual Cost
 
@@ -35,6 +35,7 @@ class ProjectSnapshot:
         self.vac = self.bac - self.eac
 
     def print_status(self):
+        print("----")
         print("BAC:" + str(self.bac))
         print("PV:" + str(self.pv))
         print("EV:" + str(self.ev))
@@ -51,10 +52,10 @@ class ProjectSnapshot:
 
 if __name__ == "__main__":
 
-    bac = input("Budget At Completion:")  # Budget At Completion
-    pv = input("Planned Cost:")  # Planned Cost
-    ev = input("Earned Value:")  # Earned Value
-    ac = input("Actual Cost:")  # Actual Cost
+    bac = input("Please Input [Budget At Completion]:")  # Budget At Completion
+    pv = input("Please Input [Planned Value]:")  # Planned Value
+    ev = input("Please Input [Earned Value]:")  # Earned Value
+    ac = input("Please Input [Actual Cost]:")  # Actual Cost
 
     p = ProjectSnapshot(bac, pv, ev, ac)
     p.compute_evm()
