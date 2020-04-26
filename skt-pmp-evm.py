@@ -43,6 +43,7 @@ class ProjectSnapshot:
         print("----")
         print("SV:" + str(self.sv))
         print("CV:" + str(self.cv))
+        print("CPI:" + str(self.cpi))
         print("SPI:" + str(self.spi))
         print("EAC:" + str(self.eac))
         print("ETC:" + str(self.etc))
